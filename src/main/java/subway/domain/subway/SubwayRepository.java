@@ -10,5 +10,8 @@ public class SubwayRepository {
     public static List<Subway> subways() {
         return Collections.unmodifiableList(subways);
     }
-    
+
+    public static void add(Subway subway) {
+        subways.add(subway);
+    }
 }
