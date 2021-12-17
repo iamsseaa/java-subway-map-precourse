@@ -21,4 +21,22 @@ public class StationRepository {
     public static boolean deleteStation(String name) {
         return stations.removeIf(station -> Objects.equals(station.getName(), name));
     }
+
+    public static Station getStationBySameName(String name) {
+        for (Station station : stations) {
+            if (station.getName().equals(name)) {
+                return station;
+            }
+        }
+        return null;
+    }
+
+    public static boolean existsStation(String name) {
+        for (Station station : stations) {
+            if (station.isName(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

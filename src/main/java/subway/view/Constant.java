@@ -15,4 +15,6 @@ public class Constant {
     public static final String CHOICE_SUBWAY_VIEW = "3";
     public static final String CHOICE_PRINT_SUBWAY_VIEW = "4";
     public static final String CHOICE_QUIT = "Q";
+
+    public static final String ERROR_CHOICE = "[ERROR] 선택할 수 없는 기능입니다.";
 }
